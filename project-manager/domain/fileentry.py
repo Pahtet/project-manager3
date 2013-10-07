@@ -10,7 +10,15 @@ class JavaFileEntry:
 		self.__path = path
 		self.__status = status
 		self.__child_imports = [] # list of imported java classes
-		
+		self.__path_from_project=""
+	
+	@property	
+	def path_from_project(self):
+		return self.__path_from_project
+
+	def set_path_from_project(self,path_from):
+		self.__path_from_project=path_from
+
 	@property
 	def name(self):
 		return self.__name
@@ -25,7 +33,7 @@ class JavaFileEntry:
 
 	@property 
 	def child_imports(self):	
-		return self.__status	
+		return self.__child_imports	
 		
 	@status.setter
 	def status(self, new_status):

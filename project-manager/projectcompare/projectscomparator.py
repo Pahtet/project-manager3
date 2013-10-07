@@ -7,7 +7,7 @@ from domain.fileentry import JavaFileEntry
  
 class ProjectsComparator(object):
     
-    def get_diffs(self,base_project,target_project, diffs):
+    def get_diffs(self,base_project,target_project, diffs,dir_from_project_root):
         base_list=os.listdir(base_project)
         for project_entry in base_list:
             base_file = base_project+project_entry
@@ -15,13 +15,14 @@ class ProjectsComparator(object):
                 target_file = target_project+project_entry
                 diff_entry = self.get_diff_javaentry(base_file,target_file,project_entry)
                 if diff_entry != None:
+                    diff_entry.set_path_from_project(dir_from_project_root)
                     diffs[len(diffs):] = [diff_entry]            
             elif os.path.isdir(base_project+project_entry):
-                self.get_diffs(base_project+'\\'+project_entry+'\\',target_project+'\\'+project_entry+'\\',diffs)
+                self.get_diffs(base_project+'\\'+project_entry+'\\',target_project+'\\'+project_entry+'\\',diffs,dir_from_project_root+'\\'+project_entry)
         return diffs   
    
     def get_diff_javaentry(self,base,target,entry):
-        javafile = JavaFileEntry(self.getpackage(base)+"."+self.get_classname(entry),entry,'NEW')
+        javafile = JavaFileEntry(self.getpackage(base)+"."+self.get_classname(entry),base,'NEW')
         if os.path.exists(target):
             if not self.isequal(base,target):
                 javafile.status = "MODIFIED"        
@@ -62,7 +63,7 @@ class ProjectsComparator(object):
                 for line in f:         
                     if line.find(javaentry.name)!=-1:
                         return True
-                     if line.find(self.get_classname(javaentry.name))!=-1:
+                    if line.find(self.get_classname(javaentry.name))!=-1:
                         return True        
             except UnicodeDecodeError as ude:
                 # print("WARNING UnicodeDecodeError")
