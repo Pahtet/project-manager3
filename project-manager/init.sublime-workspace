@@ -1,0 +1,305 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rhq",
+				"rhqdev"
+			],
+			[
+				"__",
+				"__user"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/jar/pom.xml",
+		"/D/jBossAs/rhq46/dev-container/logs/activestandby.log",
+		"/D/development/matrix-project/pom.xml",
+		"/D/jBossAs/rhq46/dev-container/logs/db-upgrade.xml",
+		"/D/jBossAs/appServers.xml",
+		"/D/development/ActiveStandbyServerBeanTest/ActiveStandbyServerBeanTest.java",
+		"/D/development/SystemPyScripts/dbupdate.py",
+		"/D/development/SystemPyScripts/maven.py",
+		"/D/jBossAs/rhq46/dev-container/jbossas/standalone/configuration/standalone-full.xml",
+		"/D/development/py-xml-parser/parser.py",
+		"/D/jBossAs/rhq46/dev-container/jbossas/standalone/configuration/logging.properties",
+		"/D/jBossAs/rhq46/dev-container/logs/rt/ROOT_rt.log",
+		"/D/jBossAs/rhq46/dev-container/logs/hibernate_stats.log",
+		"/D/jBossAs/rhq46/dev-container/logs/server.log",
+		"/D/portableSoft/syncSettings/sEpcServerJar.ffs_batch",
+		"/D/portableSoft/syncSettings/sOpenEpc.ffs_batch",
+		"/D/jBossAs/rhq46/dev-container/logs/superlog.txt",
+		"/D/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/jar/src/main/java/org/rhq/enterprise/server/standby/ActiveStandbyServerBean.java",
+		"/D/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/Installation/pom.xml",
+		"/D/jBossAs/jboss-eap-6.1/standalone/configuration/modules.xml",
+		"/D/development/SystemPyScripts/deploy.py",
+		"/D/jBossAs/Agent/logs/agent.log",
+		"/D/development/SystemPyScripts/starter.py",
+		"/D/development/newJavaProject/pom.xml",
+		"/D/newJavaProject/pom.xml",
+		"/D/development/liquidity-project/docs/tex/lld.tex",
+		"/D/development/weather-prj/pom.xml",
+		"/D/development/prmStore/sources/poms/pom.xml",
+		"/D/development/SystemPyScripts/crontest.py",
+		"/D/development/SystemPyScripts/cpr.py",
+		"/D/development/SystemPyScripts/start.py",
+		"/D/development/SystemPyScripts/sync.py",
+		"/D/jBossAs/jboss-eap-6.1-2/standalone/configuration/modules.xml",
+		"/D/jBossAs/rhq46/dev-container/jbossas/standalone/configuration/standalone-full_xml_history/20130911-141148662/standalone-full.v2.xml",
+		"/D/jBossAs/rhq46/dev-container/logs/jbossas-boot.log",
+		"/D/jBossAs/rhq46/dev-container/jbossas/standalone/configuration/standalone-full_xml_history/standalone-full.initial.xml",
+		"/D/development/prmStore/sources/jboss-configs/rhq/standalone-full.xml",
+		"/D/portableSoft/syncSettings/rOpenEpcEnterprise.ffs_batch",
+		"/D/jBossAs/rhq46/dev-container/bin/wrapper/rhq-server-wrapper.conf",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/D/portableSoft/syncSettings/rOpenEpc.ffs_batch",
+		"/D/jBossAs/rhq46/Server/logs/server.log",
+		"/D/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/appserver/target/build.properties",
+		"/D/jBossAs/rhq46/Server/jbossas/standalone/configuration/standalone-full.xml",
+		"/D/jBossAs/rhq46/Server/bin/rhq-server.properties",
+		"/D/development/test-service/pom.xml",
+		"/D/portableSoft/apache-maven-3.0.4/conf/settings.xml",
+		"/D/jBossAs/rhq46/dev-container/modules/org/rhq/rhq-enterprise-server-startup-subsystem/main/deployments.index",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/target/antrun/build-main.xml",
+		"/D/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/target/build.properties",
+		"/D/jBossAs/rhq46/dev-container/logs/rhq-installer.log",
+		"/D/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/Installation/default.properties",
+		"/D/jBossAs/rhq46/dev-container/jbossas/standalone/configuration/application-users.properties",
+		"/D/jBossAs/rhq46/dev-container/jbossas/standalone/configuration/mgmt-users.properties",
+		"/D/jBossAs/rhq46/Server/logs/rhq-installer.log",
+		"/D/jBossAs/rhq46/dev-container/logs/rhq-server-wrapper.log",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/itests-2/src/test/java/org/rhq/enterprise/server/event/test/EventManagerTest.java",
+		"/D/jBossAs/rhq46/dev-container/bin/rhq-server.bat",
+		"/D/jBossAs/rhq46/dev-container/bin/wrapper/rhq-server-wrapper.inc",
+		"/G/sync",
+		"/D/jBossAs/jboss-eap-6.1-2/standalone/configuration/standalone.xml",
+		"/D/jBossAs/jboss-eap-6.1/standalone/configuration/standalone.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/itests-2/src/test/resources/arquillian.xml",
+		"/D/jBossAs/rhq46/dev-container/bin/rhq-server.properties",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/itests-2/src/test/resources/jboss-deployment-structure.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/itests-2/src/test/resources/application.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/itests-2/src/test/java/org/rhq/enterprise/server/discovery/DiscoveryBossBeanTest.java",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/itests-2/src/test/resources/test-alert-sender-serverplugin.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/code-coverage/pom.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/Agent/tiger/pom.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/jar/src/test/java/org/rhq/enterprise/server/discovery/DeletedResourceTypeFilterTest.java",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/itests-2/pom.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/itests-2/src/test/java/org/rhq/enterprise/client/security/test/JndiAccessTest.java",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/pom.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/jar/src/test/java/org/rhq/enterprise/server/content/test/ContentManagerBeanMockTest.java",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/itests-2/src/test/resources/org/rhq/enterprise/server/inventory/InventoryManagerBeanTest.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/itests-2/src/test/java/org/rhq/enterprise/server/test/AbstractEJB3Test.java",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/jar/src/test/java/org/rhq/enterprise/server/content/test/QuartzScheduleFormatTest.java",
+		"/D/development/project-manager3/tests/resources/simple.xml",
+		"/D/development/project-manager3/project-manager/entry-manager.py",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/integration-tests/jndi-access/remote-server/pom.xml",
+		"/D/development/project-manager3/project-manager/xmlparser.py",
+		"/D/development/project-manager3/project-manager/projectxmlhamdler.py",
+		"/D/tree.txt",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/Agent/tiger/dependincies.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/Schema/pom.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/Agent/core/pom.xml",
+		"/D/pom.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/plugins/rhq-server/src/main/resources/META-INF/rhq-plugin.xml",
+		"/D/development/jboss7connector/src/main/java/net/kapch/mediator/AvailabilityTest.java",
+		"/D/tiger-plugin-1.1.0/META-INF/MANIFEST.MF",
+		"/D/jBossAs/jboss-eap-6.1/bin/client/jboss-client/META-INF/maven/org.jboss.xnio/xnio-api/pom.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/Agent/tiger/src/main/resources/META-INF/rhq-plugin.xml",
+		"/D/jBossAs/Agent/data/tmp/tiger-plugin-1.1.0.jar2547882963566392843.classloader/xnio-nio-3.0.7.GA.jar4450951187100816184.tmp",
+		"/D/development/test-jmx-client/src/main/java/net/kapsch/asms/miscellaneous/JmxTest.java",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/plugins/jmx/pom.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/pom.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/pom.xml.keep",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/plugins/pom.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/plugins/jboss-as-7/pom.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/plugins/rhq-server/pom.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/plugins/jboss-as-7/src/main/resources/META-INF/rhq-plugin.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/Agent/sip-lb/src/main/resources/META-INF/rhq-plugin.xml",
+		"/D/myStore/rhq-jboss-as-7-plugin-4.6.0/META-INF/maven/org.rhq/rhq-jboss-as-7-plugin/pom.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/plugins/jboss-software/pom.xml",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/plugins/jboss-as-7/.settings/org.eclipse.core.resources.prefs",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/plugins/jboss-as-7/.classpath",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/plugins/pom.xml~",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/plugins/jboss-as-7/json-api/standalone_full_ha.txt",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/plugins/jboss-as-7/json-api/domain.txt",
+		"/D/myStore/rhq-jboss-as-7-plugin-4.6.0/META-INF/maven/org.rhq/rhq-jboss-as-7-plugin/pom.properties",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/RHQ460/modules/core/dbutils/src/main/scripts/dbsetup/nodes-schema.xml",
+		"/D/jBossAs/jboss-eap-6.1/bin/client/README-EJB-JMS.txt",
+		"/D/myStore/tigers/tiger-plugin-1.1.0-windows/net/kapsch/asms/agentplugin/tiger/TigerServerComponent.class",
+		"/D/rhq-installer.sh",
+		"/D/rhq-server.sh",
+		"/D/development/project-manager3/tests/test.py",
+		"/D/development/project-manager3/doc/tex/lld.tex",
+		"/D/portableSoft/syncSettings/dlBooks.ffs_batch",
+		"/M/ipimenov_OAM_EPC_V1.0.0/kcc_appserver_ms/Agent/tiger/src/main/resources/META-INF/custom-rhq-plugin.xml",
+		"/D/development/project-manager3/project-manager3.sublime-project",
+		"/D/portableSoft/syncSettings/dlDev.ffs_batch"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"HibernateStats",
+			"current status null",
+			"appender",
+			"alertDefinitionId",
+			"devlog",
+			"dev",
+			"devlog",
+			"dev",
+			"devlog",
+			"obtained",
+			"obtain",
+			"devlo",
+			"devlog",
+			"Thread-6",
+			"devlog",
+			"junit",
+			"jdkToolsJar",
+			"${jdkToolsJar}",
+			"<dependency>\n			<groupId>org.rhq</groupId>\n			<artifactId>rhq-jmx-plugin</artifactId>\n			<version>${rhq.version}</version>\n			<scope>provided</scope>\n		</dependency>",
+			"jmx",
+			"setup"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "init.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

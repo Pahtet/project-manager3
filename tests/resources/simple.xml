@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<project name="test-project">
+
+	<properties>
+		<home>D:development</home>
+	</properties>	
+
+	<structure>
+		<dir path="src/main/java">
+			<file name="test.package.Testclass.java" template = "simple.java"></file>
+		</dir>
+		<dir path="src/test/java">
+			<file name="test.package.Testclass.java" template = "simpletest.java"></file>
+		</dir>
+		<file name="pom.xml" template = "simplepom.xml"/>
+	</structure>
+
+	<build>
+		<profile >
+		</profile>	
+		<profie>
+		</profie>
+	<build>
+
+</project>

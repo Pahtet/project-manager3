@@ -1,0 +1,609 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"__",
+				"__cmdexecutor"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "project-manager/rhqdiffs.py",
+			"settings":
+			{
+				"buffer_size": 1574,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/org.rhq.enterprise.gui.coregui.client.bundle.deployment.BundleDeploymentDataSource.xml",
+			"settings":
+			{
+				"buffer_size": 256,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/org.rhq.enterprise.gui.coregui.client.bundle.tree.BundleTreeView.xml",
+			"settings":
+			{
+				"buffer_size": 226,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "project-manager/merger/merger.py",
+			"settings":
+			{
+				"buffer_size": 777,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "project-manager/projectcompare/projectscomparator.py",
+			"settings":
+			{
+				"buffer_size": 4431,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/com.jboss.jbossnetwork.product.jbpm.handlers.InPluginControlActionFacade.xml",
+			"settings":
+			{
+				"buffer_size": 236,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/com.jboss.jbossnetwork.product.jbpm.handlers.PluginContainerControlActionFacade.xml",
+			"settings":
+			{
+				"buffer_size": 243,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/org.jboss.on.plugins.tomcat.test.TomcatPluginTest.xml",
+			"settings":
+			{
+				"buffer_size": 281,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "#!python3\n# -*- coding: utf-8 -*-\nimport os\nimport os.path\n\n\nclass FileManager:\n\n	def copyfile(source,destination):\n		\n	\n	def writetoxmlfile(self,path,content):\n		file_object = open(path,'w+')\n		file_object.write(content)\n		file_object.close()\n",
+			"file": "project-manager/managers/filemanager.py",
+			"file_size": 263,
+			"file_write_time": 130256151631372647,
+			"settings":
+			{
+				"buffer_size": 244,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/org.rhq.bindings.output.TabularWriter.xml",
+			"settings":
+			{
+				"buffer_size": 275,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/py3.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/development/project-manager3/project-manager/domain/fileentry.py",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/org.jboss.on.plugins.tomcat.TomcatCacheComponent.xml",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/org.jboss.on.plugins.tomcat.TomcatConnectorComponent.xml",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/org.rhq.bindings.util.ScriptUtil.xml",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/org.rhq.core.clientapi.agent.metadata.i18n.PluginPropertyBundleManager.xml",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/org.rhq.core.clientapi.agent.metadata.EventsMetadataParser.xml",
+		"/D/development/project-manager3/project-manager/managers/cliexecutor.py",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/org.rhq.core.tool.plugindoc.PluginDescriptorProcessor.xml",
+		"/D/development/project-manager3/project-manager/rhqdiffs.py",
+		"/D/development/project-manager3/project-manager/managers/system_vars_manager.py",
+		"/D/development/project-manager3/project-manager/managers/__init__.py",
+		"/D/development/project-manager3/project-manager/__init__.py",
+		"/G/development/project-manager3/project-manager/filediff.py",
+		"/D/development/project-manager3/project-manager/diffrhq.py",
+		"/G/development/project-manager3/project-manager/managers/filemanager.py",
+		"/G/development/project-manager3/project-manager/managers/dbmanager.py",
+		"/G/development/project-manager3/project-manager/merger/system_vars_manager.py",
+		"/G/development/project-manager3/project-manager/merger/stucture_walker.py",
+		"/G/development/project-manager3/project-manager/entry-manager.py",
+		"/G/development/project-manager3/doc/tex/lld.tex",
+		"/C/Users/ipimenov/AppData/Roaming/Sublime Text 3/Packages/User/py3.sublime-build",
+		"/D/development/project-manager3/project-manager/managers/init.py",
+		"/D/development/project-manager3/project-manager3.sublime-project",
+		"/D/development/SystemPyScripts/cliexecutor.py",
+		"/D/development/project-manager3/project-manager/merger/system_vars_manager.py",
+		"/D/development/SystemPyScripts/rhqinstall.py",
+		"/D/portableSoft/syncSettings/sAsmsRhq.ffs_batch",
+		"/M/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/RHQ460/.project",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/RHQ_4_6_0/pom.xml",
+		"/D/development/project-manager3/project-manager/merger/stucture_walker.py",
+		"/D/portableSoft/syncSettings/cAsmsVs460.ffs_batch",
+		"/D/portableSoft/syncSettings/cAsmsVs490.ffs_batch",
+		"/D/development/sample-measurement/docs/tex/lld.tex",
+		"/D/development/merger/merger/stucture_walker.py",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/RHQ490/modules/enterprise/server/jar/src/main/java/org/rhq/enterprise/server/measurement/MeasurementDataManagerBean.java",
+		"/M/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/Agent/diam/src/main/resources/META-INF/rhq-plugin.xml",
+		"/D/development/py-xml-parser/custom-rhq-plugin.xml",
+		"/D/development/py-xml-parser/parser.py",
+		"/D/development/py-xml-parser/ss7/Server.xls",
+		"/D/development/py-xml-parser/ss7/Serverm.xls",
+		"/C/Users/ipimenov/AppData/Roaming/Sublime Text 3/Packages/User/pack.sublime-snippet",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/RHQ490/modules/enterprise/server/server-metrics/pom.xml",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/RHQ490/modules/enterprise/server/server-metrics/src/main/java/org/rhq/server/metrics/MetricsServer.java",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/RHQ490/modules/enterprise/server/server-metrics/src/main/java/org/rhq/server/metrics/PreparedStatements.java",
+		"/H/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/gui/coregui/src/main/webapp/images/header/header_bg.png",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/RHQ490/pom.xml",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/RHQ490/modules/enterprise/server/server-metrics/src/main/java/org/rhq/server/metrics/StorageSession.java",
+		"/D/portableSoft/syncSettings/dlBooks.ffs_batch",
+		"/D/portableSoft/syncSettings/dlSoft.ffs_batch",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/RHQ460/modules/enterprise/server/jar/src/main/java/org/rhq/enterprise/server/measurement/MeasurementDataManagerBean.java",
+		"/D/portableSoft/syncSettings/dlDev.ffs_batch",
+		"/D/portableSoft/syncSettings/dlRepo.ffs_batch",
+		"/C/Users/ipimenov/AppData/Roaming/Sublime Text 3/Packages/Sublimerge Pro/Sublimerge.sublime-settings",
+		"/C/Users/ipimenov/AppData/Roaming/Sublime Text 3/Packages/Sublimerge Pro/Custom Comparisons.sublime-settings",
+		"/C/Users/ipimenov/AppData/Roaming/Sublime Text 3/Packages/User/Sublimerge.sublime-settings",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/RHQ490/modules/core/plugin-container/src/main/java/org/rhq/core/pc/measurement/MeasurementManager.java",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/RHQ460/modules/core/plugin-container/src/main/java/org/rhq/core/pc/measurement/MeasurementManager.java",
+		"/D/*",
+		"/C/Users/ipimenov/AppData/Roaming/Sublime Text 3/Packages/LaTeXing/Default.sublime-keymap",
+		"/D/development/project-manager3/doc/tex/lld.tex",
+		"/D/development/project-manager3/project-manager/core/init.py",
+		"/D/development/project-manager3/project-manager/domain/projectentry.py",
+		"/D/development/project-manager3/fileentry.py",
+		"/D/portableSoft/apache-maven-3.0.4/conf/settings.xml",
+		"/D/development/project-manager/project.xml",
+		"/D/development/prmStore/sources/xml/prm-tex.xml",
+		"/D/development/liquidity-project/docs/tex/lld.tex",
+		"/D/development/prmStore/sources/tex/lld.tex",
+		"/D/development/prmStore/templates/xml/prm-start - Copy.xml",
+		"/D/development/prmStore/templates/xml/prm-tex.xml",
+		"/M/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/RHQ460/modules/core/client-api/src/main/resources/rhq-plugin.xsd",
+		"/D/appServers/rhq-server/dev-container/rhq-server/bin/rhq-server.properties",
+		"/D/appServers/rhq-server/dev-container/rhq-server/bin/rhqctl.properties",
+		"/D/appServers/rhq-server/dev-container/rhq-server/bin/rhqctl",
+		"/D/appServers/rhq-server/dev-container/rhq-server/bin/rhq-server.bat",
+		"/D/appServers/rhq-server/dev-container/rhq-agent/bin/rhq-agent.bat",
+		"/D/appServers/rhq-server/dev-container/bin/rhq-storage.properties",
+		"/D/appServers/rhq-server/dev-container/bin/rhqctl.properties",
+		"/D/appServers/rhq-server/dev-container/modules/org/rhq/rhq-server-control/main/module.xml",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/RHQ490/modules/core/domain/src/main/java/org/rhq/core/domain/measurement/Availability.java",
+		"/D/appServers/appServers.xml",
+		"/D/development/prmStore/sources/poms/simplepom.xml",
+		"/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/RHQ460/modules/core/domain/src/main/java/org/rhq/core/domain/measurement/MeasurementOOB.java"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"print",
+			"-*-\n",
+			"Raw",
+			"Raw]",
+			"Raw",
+			" com.datastax.driver",
+			"getValues",
+			"section",
+			"differenciases",
+			">\n",
+			"template"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "project-manager/rhqdiffs.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1574,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1382,
+								1574
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/org.rhq.enterprise.gui.coregui.client.bundle.deployment.BundleDeploymentDataSource.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								155,
+								236
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/org.rhq.enterprise.gui.coregui.client.bundle.tree.BundleTreeView.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "project-manager/merger/merger.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 777,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								636,
+								636
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "project-manager/projectcompare/projectscomparator.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								905,
+								905
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 420.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/com.jboss.jbossnetwork.product.jbpm.handlers.InPluginControlActionFacade.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								236,
+								236
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/com.jboss.jbossnetwork.product.jbpm.handlers.PluginContainerControlActionFacade.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/org.jboss.on.plugins.tomcat.test.TomcatPluginTest.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "project-manager/managers/filemanager.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/D/ipimenov_ASMS_V4.0.0/kcc_appserver_ms/merge-analysis/org.rhq.bindings.output.TabularWriter.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 275,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								104,
+								104
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 201.0
+	},
+	"project": "project-manager3.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
