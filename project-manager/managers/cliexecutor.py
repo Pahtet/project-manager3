@@ -10,5 +10,6 @@ class CmdLineExecutor(object):
 
 	def execute(self,command):
 		#os.chdir(path)
-		subprocess.call(command.split(),shell = True)
+		returncode=subprocess.call(command.split(),shell = True)
+		print(returncode)
  
