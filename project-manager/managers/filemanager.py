@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 import os
 import os.path
-
+import shutil
 
 class FileManager:
 
 	def copyfile(source,destination):
-		pass
+		shutil.copyfile(source,destination)
 	
 	def writetoxmlfile(self,path,content):
 		file_object = open(path,'w+')

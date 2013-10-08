@@ -10,6 +10,8 @@ xmldir = 'D:\\merge-analysis\\'
 asmspath = "D:\\kcc_appserver_ms\\RHQ460\\modules\\core\\"
 rhq46path = "D:\\rhq-RHQ_4_6_0\\modules\\core\\"
 rhq49path =  "D:\\rhq-RHQ_4_9_0\\modules\\core\\"
+logs_path="D:\\merge-analysis\\logs\\"
+kdiff_path="C:\\KDiff3\\kdiff3.exe "
 
 def get_new(all_diffs):
 	new = []
@@ -28,7 +30,7 @@ def get_modified(all_diffs):
 if __name__=='__main__':	
 	file_manager = FileManager()
 	comparator = ProjectsComparator()
-	merge=ProjectsMerger(rhq46path)
+	merge=ProjectsMerger(rhq46path,logs_path,kdiff_path)
 	diffs = []
 	roots = []
 	diffs = comparator.get_diffs(asmspath,rhq46path, diffs,"")
@@ -48,3 +50,4 @@ if __name__=='__main__':
 	print(len(roots))
 	root = roots[0]
 	merge.merge_javaentry(root,rhq46path)
+	merge.close_log()
