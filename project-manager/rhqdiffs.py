@@ -11,7 +11,7 @@ asmspath = "D:\\kcc_appserver_ms\\RHQ460\\modules\\core\\"
 rhq46path = "D:\\rhq-RHQ_4_6_0\\modules\\core\\"
 rhq49path =  "D:\\rhq-RHQ_4_9_0\\modules\\core\\"
 logs_path="D:\\merge-analysis\\logs\\"
-kdiff_path="C:\\KDiff3\\kdiff3.exe "
+kdiff_path=os.environ.get('KDIFF3_HOME')+"kdiff3.exe" 
 
 inPath=asmspath 
 outPath=rhq49path
