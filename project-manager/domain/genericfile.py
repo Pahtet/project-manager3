@@ -1,13 +1,12 @@
 #!python3 
 # -*- coding: utf-8 -*-
 
-class JavaFileEntry:
+class GenericFileEntry:
 
-	def __init__(self, name, path,status):
+	def __init__(self, name, path, status):
 		self.__name = name
 		self.__path = path
 		self.__status = status
-		self.__child_imports = [] # list of imported java classes
 	
 	@property
 	def name(self):
@@ -20,17 +19,10 @@ class JavaFileEntry:
 	@property 
 	def status(self):	
 		return self.__status
-
-	@property 
-	def child_imports(self):	
-		return self.__child_imports	
 		
 	@status.setter
 	def status(self, new_status):
 		self.__status = new_status
-		
-	def add_import(self,fileentry):
-		self.__child_imports.append(fileentry)
 			
 	def xmlprint(self,xml_tree):
 		xml_tree += self.xmlprintfile()
@@ -49,17 +41,7 @@ class JavaFileEntry:
 		xmlstring = '<file '
 		xmlstring+='name='+'\''+self.__name+'\'' + ' '
 		xmlstring+='status='+'\''+self.__status+'\''+ ' '
-		return xmlstring	
-
-if __name__=="__main__":
-	classfile = JavaFileEntry("Class","D:\Class","new")
-	importedfile1 = JavaFileEntry("Class2","D:\Class","new")
-	importedfile2 = JavaFileEntry("Class2","D:\Class","new")
-	importedfile1.add_import(importedfile2)
-	classfile.add_import(importedfile1)
-	classfile.add_import(importedfile2)
-	tree = classfile.xmlprint('') 	
-	print(tree)	
+		return xmlstring
 		
 		
 		

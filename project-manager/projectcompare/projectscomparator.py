@@ -4,24 +4,37 @@ import os
 import os.path
 import codecs
 from domain.fileentry import JavaFileEntry 
- 
+from domain.genericfile import GenericFileEntry
+
 class ProjectsComparator(object):
     
-    def get_diffs(self,base_project,target_project, diffs):
-        base_list=os.listdir(base_project)
-        for project_entry in base_list:
+    def get_diffs(self,java,base_project,target_project, diffs):
+        for project_entry in os.listdir(base_project):
             base_file = base_project+project_entry
-            if os.path.isfile(base_file) and project_entry.endswith(".java"):
+            if os.path.isfile(base_file):
+                diff_entry = None
                 target_file = target_project+project_entry
-                diff_entry = self.get_diff_javaentry(base_file,target_file,project_entry)
+                if java and project_entry.endswith(".java"):                    
+                    diff_entry = self.get_diff_javaentry(base_file,target_file,project_entry)
+                else:
+                    diff_entry = self.get_diff_generic(base_file,target_file,project_entry)
                 if diff_entry != None:
-                    diffs[len(diffs):] = [diff_entry]            
+                        diffs[len(diffs):] = [diff_entry]
             elif os.path.isdir(base_project+project_entry):
-                self.get_diffs(base_project+'\\'+project_entry+'\\',target_project+'\\'+project_entry+'\\',diffs)
+                self.get_diffs(java,base_project+'\\'+project_entry+'\\',target_project+'\\'+project_entry+'\\',diffs)
         return diffs   
-   
+    
+    def get_diff_generic(self,base,target,entry):
+        genericfile=GenericFileEntry(entry,base,"NEW")
+        if os.path.exists(target):
+            if not self.isequal(base,target):
+                genericfile.status = "MODIFIED"        
+                return genericfile
+            return None
+        return genericfile
+
     def get_diff_javaentry(self,base,target,entry):
-        javafile = JavaFileEntry(self.getpackage(base)+"."+self.get_classname(entry),base,'NEW')
+        javafile = JavaFileEntry(self.getpackage(base)+"."+self.get_classname(entry),base,"NEW")
         if os.path.exists(target):
             if not self.isequal(base,target):
                 javafile.status = "MODIFIED"        
