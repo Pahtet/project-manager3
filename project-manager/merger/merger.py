@@ -10,9 +10,8 @@ class ProjectsMerger:
 	cli_executor = CmdLineExecutor()
 	file_manager = FileManager()
 	
-	def __init__(self,target_project,logs_path,kdiff_path):
+	def __init__(self,target_project,logs_path):
 		self.__target_project = target_project
-		self.__kdiff_path=kdiff_path
 		now=datetime.datetime.now()
 		logfilename="merge_%d_%d_%d_%d_%d_%d.log"%(now.year,now.month,now.day,now.hour,now.minute,now.second)
 		self.__log_file=open(logs_path+logfilename,"a")
@@ -37,8 +36,7 @@ class ProjectsMerger:
 	def merge_modified_java_entry(self,java_entry):
 		self.__log_file.write("m "+java_entry.name+'\n')
 		file2=self.get_file_name_in_target_project(java_entry)
-		cmd=self.__kdiff_path+java_entry.path+" "+file2+" -m -o "+file2+" --auto"
-		ProjectsMerger.cli_executor.execute(cmd)		
+		ProjectsMerger.cli_executor.merge(java_entry.path,file2,file2)
 
 	def get_file_name_in_target_project(self,java_entry):
 		return self.__target_project+java_entry.path_from_project+"\\"+java_entry.path[java_entry.path.rfind('\\')+1:]
