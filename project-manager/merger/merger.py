@@ -7,10 +7,12 @@ from domain.fileentry import JavaFileEntry
 import datetime
 
 class ProjectsMerger:
+	keys=["RHQ460","RHQ490","rhq-RHQ_4_6_0"]
 	cli_executor = CmdLineExecutor()
 	file_manager = FileManager()
 	
-	def __init__(self,target_project,logs_path):
+	def __init__(self,base_project,target_project,logs_path):
+		self.__base_project=base_project
 		self.__target_project = target_project
 		now=datetime.datetime.now()
 		logfilename="merge_%d_%d_%d_%d_%d_%d.log"%(now.year,now.month,now.day,now.hour,now.minute,now.second)
@@ -31,14 +33,28 @@ class ProjectsMerger:
 
 	def merge_new_javaentry(self,java_entry):
 		self.__log_file.write("+ "+java_entry.name+'\n')
-		file_manager.copyfile(java_entry.path,self.get_file_name_in_target_project(java_entry))
+		file_in_target=self.__get_base_path(self.__target_project)+self.__get_paths(java_entry.path)[1]
+		file_manager.copyfile(java_entry.path,file_in_target)
 
 	def merge_modified_java_entry(self,java_entry):
 		self.__log_file.write("m "+java_entry.name+'\n')
-		file2=self.get_file_name_in_target_project(java_entry)
-		ProjectsMerger.cli_executor.merge(java_entry.path,file2,file2)
+		file_in_base=self.__get_base_path(self.__base_project)+self.__get_paths(java_entry.path)[1]
+		file_in_target=self.__get_base_path(self.__target_project)+self.__get_paths(java_entry.path)[1]
+		ProjectsMerger.cli_executor.merge(java_entry.path,file_in_base,file_in_target)
 
-	def get_file_name_in_target_project(self,java_entry):
-		return self.__target_project+java_entry.path_from_project+"\\"+java_entry.path[java_entry.path.rfind('\\')+1:]
 	def get_merge_cmd_line(java_entry):
 		pass
+
+	def __get_base_path(self,dir):
+		for key in self.keys:
+                	paths = self.__split_path(dir,key)
+                	if len(paths)==2:
+                		return paths[0]+key+"\\"
+	def __get_paths(self, current_file):
+                for key in self.keys:
+                	paths = self.__split_path(current_file,key)
+                	if len(paths)==2:
+                		return paths[0],paths[1]
+
+	def __split_path(self,path,key):
+		return path.split(key)

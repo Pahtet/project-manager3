@@ -7,9 +7,9 @@ from managers.filemanager import FileManager
 from merger.merger import ProjectsMerger
 
 xmldir = 'D:\\merge-analysis\\'
-asmspath = "D:\\GitHub\\atlas\\kcc_appserver_ms\\RHQ460\\modules\\core\\"
-rhq46path = "D:\\GitHub\\atlas\\kcc_appserver_ms\\rhq-RHQ_4_6_0\\modules\\core\\"
-rhq49path =  "D:\\GitHub\\atlas\\kcc_appserver_ms\\RHQ490\\modules\\core\\"
+asmspath = "D:\\GitHub\\atlas\\kcc_appserver_ms\\RHQ460\\modules\\core\\client-api\\"
+rhq46path = "D:\\GitHub\\atlas\\kcc_appserver_ms\\rhq-RHQ_4_6_0\\modules\\core\\client-api\\"
+rhq49path =  "D:\\GitHub\\atlas\\kcc_appserver_ms\\RHQ490\\modules\\core\\client-api\\"
 logs_path = "D:\\merge-analysis\\logs\\"
 
 inPath=asmspath 
@@ -32,10 +32,10 @@ def get_modified(all_diffs):
 if __name__=='__main__':	
 	file_manager = FileManager()
 	comparator = ProjectsComparator()
-	merge=ProjectsMerger(outPath,logs_path)
+	merge=ProjectsMerger(rhq46path,outPath,logs_path)
 	diffs = []
 	roots = []
-	diffs = comparator.get_diffs(inPath,outPath, diffs,"")
+	diffs = comparator.get_diffs(inPath,outPath, diffs)
 	modified = get_modified(diffs)
 
 	print(len(diffs)) 

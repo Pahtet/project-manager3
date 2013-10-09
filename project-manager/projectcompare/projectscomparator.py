@@ -7,7 +7,7 @@ from domain.fileentry import JavaFileEntry
  
 class ProjectsComparator(object):
     
-    def get_diffs(self,base_project,target_project, diffs,dir_from_project_root):
+    def get_diffs(self,base_project,target_project, diffs):
         base_list=os.listdir(base_project)
         for project_entry in base_list:
             base_file = base_project+project_entry
@@ -15,10 +15,9 @@ class ProjectsComparator(object):
                 target_file = target_project+project_entry
                 diff_entry = self.get_diff_javaentry(base_file,target_file,project_entry)
                 if diff_entry != None:
-                    diff_entry.set_path_from_project(dir_from_project_root)
                     diffs[len(diffs):] = [diff_entry]            
             elif os.path.isdir(base_project+project_entry):
-                self.get_diffs(base_project+'\\'+project_entry+'\\',target_project+'\\'+project_entry+'\\',diffs,dir_from_project_root+'\\'+project_entry)
+                self.get_diffs(base_project+'\\'+project_entry+'\\',target_project+'\\'+project_entry+'\\',diffs)
         return diffs   
    
     def get_diff_javaentry(self,base,target,entry):
