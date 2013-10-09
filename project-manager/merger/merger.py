@@ -24,24 +24,28 @@ class ProjectsMerger:
 	def close_log(self):
 		self.__log_file.close()
 
-	def merge_javaentry(self,java_entry,target_project):
+	def merge_javaentry(self,java_entry):
 		for entry in java_entry.child_imports:
 			if entry.status == "NEW":
 				self.merge_new_javaentry(entry)			
 			if entry.status == "MODIFIED" :
 				self.merge_modified_java_entry(entry)
+			entry.status = "MERGED"
 
 	def merge_new_javaentry(self,java_entry):
 		self.__log_file.write("+ "+java_entry.name+'\n')
 		file_in_target=self.__get_base_path(self.__target_project)+self.__get_paths(java_entry.path)[1]
 		file_manager.copyfile(java_entry.path,file_in_target)
+		ProjectsMerger.cli_executor.git_add(file_in_target)
+		ProjectsMerger.cli_executor.git_commit(java_entry.name)
 
 	def merge_modified_java_entry(self,java_entry):
 		self.__log_file.write("m "+java_entry.name+'\n')
 		file_in_base=self.__get_base_path(self.__base_project)+self.__get_paths(java_entry.path)[1]
 		file_in_target=self.__get_base_path(self.__target_project)+self.__get_paths(java_entry.path)[1]
-		ProjectsMerger.cli_executor.merge(java_entry.path,file_in_base,file_in_target)
-
+		ProjectsMerger.cli_executor.merge(file_in_base,java_entry.path,file_in_target)
+		ProjectsMerger.cli_executor.git_commit(java_entry.name)
+		
 	def get_merge_cmd_line(java_entry):
 		pass
 

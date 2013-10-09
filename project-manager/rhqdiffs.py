@@ -7,13 +7,13 @@ from managers.filemanager import FileManager
 from merger.merger import ProjectsMerger
 
 xmldir = 'D:\\merge-analysis\\'
-asmspath = "D:\\GitHub\\atlas\\kcc_appserver_ms\\RHQ460\\modules\\core\\client-api\\"
-rhq46path = "D:\\GitHub\\atlas\\kcc_appserver_ms\\rhq-RHQ_4_6_0\\modules\\core\\client-api\\"
-rhq49path =  "D:\\GitHub\\atlas\\kcc_appserver_ms\\RHQ490\\modules\\core\\client-api\\"
+asmspath = "D:\\GitHub\\atlas\\kcc_appserver_ms\\RHQ460\\modules\\enterprise\\"
+rhq46path = "D:\\GitHub\\atlas\\kcc_appserver_ms\\rhq-RHQ_4_6_0\\modules\\enterprise\\"
+rhq49path =  "D:\\GitHub\\atlas\\kcc_appserver_ms\\RHQ490\\modules\\enterprise\\"
 logs_path = "D:\\merge-analysis\\logs\\"
 
 inPath=asmspath 
-outPath=rhq49path
+outPath=rhq46path
 
 def get_new(all_diffs):
 	new = []
@@ -32,23 +32,23 @@ def get_modified(all_diffs):
 if __name__=='__main__':	
 	file_manager = FileManager()
 	comparator = ProjectsComparator()
-	merge=ProjectsMerger(rhq46path,outPath,logs_path)
 	diffs = []
 	roots = []
 	diffs = comparator.get_diffs(inPath,outPath, diffs)
 	modified = get_modified(diffs)
 
-	print(len(diffs)) 
-	print("diffs founded\n")
-	
-	print(len(modified)) 
-	print("modified diffs founded\n")	
+	print("%d diffs founded\n"%len(diffs)) 	
+	print("%d modified diffs founded\n"%len(modified))	
 		
 	for mod in modified: 
 		roots = comparator.get_root_imports(mod,inPath,outPath,roots)
 	
 	for root in roots:
 		file_manager.writetoxmlfile(xmldir+root.name+'.xml', root.xmlprint('<?xml version="1.0"?>\n'))
-	print(len(roots))
-	root = roots[0]
-	merge.merge_javaentry(root,rhq49path)
+	print("%d roots\n"%len(roots)) 
+
+	merge=ProjectsMerger(rhq46path,rhq49path,logs_path)
+	for root in roots:
+		merge.merge_javaentry(root)
+	
+	merge.close_log()
