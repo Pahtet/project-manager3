@@ -17,7 +17,8 @@ class ProjectsComparator(object):
                 if java and project_entry.endswith(".java"):                    
                     diff_entry = self.get_diff_javaentry(base_file,target_file,project_entry)
                 else:
-                    diff_entry = self.get_diff_generic(base_file,target_file,project_entry)
+                    if not java:
+                        diff_entry = self.get_diff_generic(base_file,target_file,project_entry)
                 if diff_entry != None:
                         diffs[len(diffs):] = [diff_entry]
             elif os.path.isdir(base_project+project_entry):

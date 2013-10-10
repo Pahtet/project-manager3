@@ -3,7 +3,8 @@
 
 from managers.filemanager import FileManager
 from managers.cliexecutor import CmdLineExecutor
-from domain.fileentry import JavaFileEntry 
+from domain.fileentry import JavaFileEntry
+import os.path
 import datetime
 
 class ProjectsMerger:
@@ -33,9 +34,11 @@ class ProjectsMerger:
 			entry.status = "MERGED"
 
 	def merge_new_javaentry(self,java_entry):
-		self.__log_file.write("+ "+java_entry.name+'\n')
 		file_in_target=self.__get_base_path(self.__target_project)+self.__get_paths(java_entry.path)[1]
-		file_manager.copyfile(java_entry.path,file_in_target)
+		if os.path.isfile(file_in_target):
+			return
+		self.__log_file.write("+ "+java_entry.name+'\n')
+		ProjectsMerger.file_manager.copyfile(java_entry.path,file_in_target)
 		ProjectsMerger.cli_executor.git_add(file_in_target)
 		ProjectsMerger.cli_executor.git_commit(java_entry.name)
 

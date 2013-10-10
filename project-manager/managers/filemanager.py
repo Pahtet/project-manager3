@@ -6,7 +6,11 @@ import shutil
 
 class FileManager:
 
-	def copyfile(source,destination):
+	def copyfile(self,source,destination):
+		folder=destination[0:destination.rfind('\\')]+"\\"
+		if not os.path.exists(folder):
+			print("Creating new folder "+folder)
+			os.makedirs(folder)
 		shutil.copyfile(source,destination)
 	
 	def writetoxmlfile(self,path,content):
